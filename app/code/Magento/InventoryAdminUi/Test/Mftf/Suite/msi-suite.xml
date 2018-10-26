@@ -11,7 +11,7 @@
     <suite name="MSI_Single_Mode">
         <before>
             <magentoCLI stepKey="dbBackup" command="setup:backup" arguments="--db"/>
-            <magentoCLI stepKey="maintenanceDisable" command="maintenance:disable"/>
+            <!--<magentoCLI stepKey="maintenanceDisable" command="maintenance:disable"/>-->
             <magentoCLI stepKey="disableWYSYWYG" command="config:set cms/wysiwyg/enabled disabled"/>
             <magentoCLI stepKey="enableStockManagement" command="config:set cataloginventory/item_options/manage_stock 1"/>
         </before>
@@ -30,7 +30,7 @@
     <suite name="MSI_Multi_Mode">
         <before>
             <magentoCLI stepKey="dbBackup" command="setup:backup" arguments="--db"/>
-            <magentoCLI stepKey="maintenanceDisable" command="maintenance:disable"/>
+            <!--<magentoCLI stepKey="maintenanceDisable" command="maintenance:disable"/>-->
             <magentoCLI stepKey="disableWYSYWYG" command="config:set cms/wysiwyg/enabled disabled"/>
         </before>
         <include>
@@ -48,7 +48,7 @@
     <suite name="MSI_Sort_Order_Tests">
         <before>
             <magentoCLI stepKey="dbBackup" command="setup:backup" arguments="--db"/>
-            <magentoCLI stepKey="maintenanceDisable" command="maintenance:disable"/>
+            <!--<magentoCLI stepKey="maintenanceDisable" command="maintenance:disable"/>-->
             <magentoCLI stepKey="disableWYSYWYG" command="config:set cms/wysiwyg/enabled disabled"/>
         </before>
         <include>
